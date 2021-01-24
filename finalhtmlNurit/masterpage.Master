@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterpage.master.cs" Inherits="finalhtmlNurit.masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>אתר הקורסים</title>
+    <link rel="stylesheet" type="text/css" href="Styles/StyleSheet1.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <img src="https://cdn.discordapp.com/attachments/647429219168813057/777992572546580532/coursePlus-removebg-preview_2.png" height="100" width="110"/>
+            <h5 style="color: blue;">coursePlus</h5>
+        </div>
+        <div class="nav">
+            <a class="button" href="Page1.aspx">Home</a>
+            <a class="button-2" href="Page2.aspx">Shop</a>
+            <a class="button-3" href="Page3.aspx">Login</a>
+            <a class="button-4" href="Page4.aspx">About</a>
+            <a class="button-5" href="Page5.aspx">Credits</a>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer">
+            <p class="footertext">Author: Tomer Kagan</p>
+            <p class="footertext">Copyright Tomer and Co. 2020-2020</p>
+        </div>
+    </div>
+</body>
+</html>
